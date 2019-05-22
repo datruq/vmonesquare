@@ -34,7 +34,7 @@ When it finished clonning and have it in your local machine, just open it with I
 
 * [Spring](https://spring.io/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [Lombok](https://projectlombok.org/) - Java library to simplify the development 
+* [Lombok](https://projectlombok.org/) - Java library to simplify the development
 * [Junit](http://junit.org/junit4/) Java unit testing framework
 * [Mockito](https://site.mockito.org/) Java Mocking framework
 
