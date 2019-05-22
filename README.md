@@ -21,11 +21,21 @@ When it finished clonning and have it in your local machine, just open it with I
 
 ![alt text](https://github.com/datruq/vmonesquare/blob/master/img/lombok_enable_annotation.png)
 
+## Building and running this application
+
+1. Open a command line window or terminal.
+2. Navigate to the root directory of the project, where the pom.xml resides.
+3. Compile the project: ```maven clean build ```.
+4. Change into the target directory: cd build/libs
+5. You should see the file name: vmonesquareapp-1.0.jar.
+6. Execute the JAR: ``` java -jar vmonesquareapp-1.0.jar```.
+7. The application should be available at http://localhost:8080/vm/getItem.
+
 ## Running the tests
 
 1. Open a command line window or terminal.
-2. Navigate to the root directory of the project, where the build.gradle resides.
-3. Compile the project: ```gradle test --info ```.
+2. Navigate to the root directory of the project, where the pom.xml resides.
+3. Compile the project: ```maven test --info ```.
 4. Change into the target directory: cd build/reports/tests/test.
 5. You should see the file name: index.html.
 6. Open it with you favorite browser

@@ -27,7 +27,7 @@ public class VendorMachineEntity {
         @Setter
         public String code;
         @Setter
-        public String cost;
+        public double cost;
 
     }
 
