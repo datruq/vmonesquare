@@ -48,6 +48,26 @@ When it finished clonning and have it in your local machine, just open it with I
 * [Junit](http://junit.org/junit4/) Java unit testing framework
 * [Mockito](https://site.mockito.org/) Java Mocking framework
 
+## REST API overviiew
+
+With this VendorMachineApp we can get:
+* If the user hasn’t added enough money, the app will provide a message indicating they need to add x more cents.
+* If the user has added exact money, the app will provide a message indicating they can keep buying.
+* If the user has added more than enough money, the app will provide a message indicating they can keep buying, and the extra balance.
+
+
+**Get postVendorMachine to start or keep buying**
+
+````curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{\"cents\": 0.0, \"bills\": 0.0, \"totalAmount\": 0.0, \"vmItem\": {\"code\": \"value1\" }}" http://localhost:8080/vm/postVendorMachine````
+
+### Targeting the REST API with Postman
+Alternatively to curl, you can use Postman to target the REST API.
+
+
+**Postman with postVendorMachine**
+
+![alt text](https://github.com/datruq/vmonesquare/blob/master/img/postman_postVendorMachine.jpg)
+
 
 ## Authors
 
