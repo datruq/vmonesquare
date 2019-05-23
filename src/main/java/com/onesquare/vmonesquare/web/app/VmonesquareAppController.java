@@ -16,9 +16,9 @@ public class VmonesquareAppController {
     @Autowired
     VmonesquareAppUsercase vmonesquareAppUsercase;
 
-    @RequestMapping(value = { "postItem" }, method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+    @RequestMapping(value = { "postVendorMachine" }, method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
-    public VendorMachineResponseEntity postItem(@RequestBody VendorMachineEntity vendorMachineEntity) {
+    public VendorMachineResponseEntity postVendorMachine(@RequestBody VendorMachineEntity vendorMachineEntity) {
         return vmonesquareAppUsercase.getItemFromVendorMachine(vendorMachineEntity);
     }
 }
