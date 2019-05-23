@@ -59,15 +59,23 @@ With this VendorMachineApp we can get:
 **Get postVendorMachine to start or keep buying**
 
 ````curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{\"cents\": 0.0, \"bills\": 0.0, \"totalAmount\": 0.0, \"vmItem\": {\"code\": \"value1\" }}" http://localhost:8080/vm/postVendorMachine````
+![alt text](https://github.com/datruq/vmonesquare/blob/master/img/console-curl-example.jpg)
 
 ### Targeting the REST API with Postman
 Alternatively to curl, you can use Postman to target the REST API.
 
 
-**Postman with postVendorMachine**
-
+**Postman with postVendorMachine Request**
 ![alt text](https://github.com/datruq/vmonesquare/blob/master/img/postman_postVendorMachine.jpg)
 
+**Postman with postVendorMachine exact amount**
+![alt text](https://github.com/datruq/vmonesquare/blob/master/img/postman-exact.jpg)
+
+**Postman with postVendorMachine not enough money**
+![alt text](https://github.com/datruq/vmonesquare/blob/master/img/postman-not-enough.jpg)
+
+**Postman with postVendorMachine extra balance**
+![alt text](https://github.com/datruq/vmonesquare/blob/master/img/postman-extra-balance.jpg)
 
 ## Authors
 
