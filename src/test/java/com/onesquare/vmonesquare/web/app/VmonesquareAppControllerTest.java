@@ -52,7 +52,7 @@ public class VmonesquareAppControllerTest {
                 .content(json)
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string("{\"productListMap\":{\"1\":{\"productCode\":\"L5\",\"productName\":\"nuts\",\"productPrice\":2.5},\"2\":{\"productCode\":\"L3\",\"productName\":\"chips\",\"productPrice\":4.5}},\"isProdutListPresent\":0,\"productPrice\":0.0,\"responseCode\":0,\"message\":\"ok\"}"));
+                .andExpect(content().string("{\"productListMap\":{\"1\":{\"id\":1,\"productCode\":\"L5\",\"productName\":\"nuts\",\"productPrice\":2.5},\"2\":{\"id\":2,\"productCode\":\"L3\",\"productName\":\"chips\",\"productPrice\":4.5}},\"isProdutListPresent\":0,\"productPrice\":0.0,\"responseCode\":0,\"message\":\"ok\"}"));
                 //.andExpect(content().string("{\"productPrice\":20.0,\"message\":\"Status OK\",\"responseCode\":" + "\"0}"));
         verify(vmonesquareAppUsercase, times(1)).getItemFromVendorMachine(Mockito.any());
         verifyNoMoreInteractions(vmonesquareAppUsercase);

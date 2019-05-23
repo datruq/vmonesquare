@@ -1,11 +1,11 @@
 package com.onesquare.vmonesquare.domain.entity;
 
+import com.onesquare.vmonesquare.utils.ReadFromCSV;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 
 @Getter
@@ -69,16 +69,10 @@ public class VendorMachineResponseEntity {
 
     private Map<Integer, ProductList> initMapProductList() {
         Map<Integer, ProductList> productsMap = new HashMap<>();
-        ProductList productList = new ProductList();
-        productList.setProductCode(PRODUCT_CODE_L5);
-        productList.setProductName(PRODUCT_NAME_NUTS);
-        productList.setProductPrice(PRODUCT_PRICE_2_5);
-        productsMap.put(1, productList);
-        productList = new ProductList();
-        productList.setProductCode(PRODUCT_CODE_L3);
-        productList.setProductName(PRODUCT_NAME_CHIPS);
-        productList.setProductPrice(PRODUCT_PRICE_4_5);
-        productsMap.put(2, productList);
+        List<ProductList> productsFromCSVFile = new ArrayList<>();
+        productsFromCSVFile = ReadFromCSV.readFromCSVFile();
+        productsMap = productsFromCSVFile.stream().collect(
+                Collectors.toMap(ProductList::getId, prod -> prod));
         return Collections.unmodifiableMap(productsMap);
     }
 
