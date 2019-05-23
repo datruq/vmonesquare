@@ -21,6 +21,12 @@ When it finished clonning and have it in your local machine, just open it with I
 
 ![alt text](https://github.com/datruq/vmonesquare/blob/master/img/lombok_enable_annotation.png)
 
+## Add the CSV file to the next path
+
+* [CSV File](https://github.com/datruq/vmonesquare/blob/master/files/productList.csv)
+**C:/test/productList.csv**
+
+
 ## Building and running this application
 
 1. Open a command line window or terminal.
