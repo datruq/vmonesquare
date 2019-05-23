@@ -1,10 +1,7 @@
 package com.onesquare.vmonesquare.domain.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Map;
 
 @Getter
 public class VendorMachineEntity {
