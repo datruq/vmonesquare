@@ -1,6 +1,5 @@
 package com.onesquare.vmonesquare.config;
 
-import com.onesquare.vmonesquare.DB.VendorMachineServiceImpl;
 import com.onesquare.vmonesquare.web.app.VmonesquareAppController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

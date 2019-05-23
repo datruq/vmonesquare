@@ -10,10 +10,13 @@ import java.util.Map;
 public class VendorMachineEntity {
 
     @Setter
-    public int cents;
+    public double cents;
 
     @Setter
-    public int bills;
+    public double bills;
+
+    @Setter
+    public double totalAmount;
 
     @Setter
     public VMItem vmItem;

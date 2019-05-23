@@ -1,9 +1,0 @@
-DROP TABLE IF EXISTS vendor_machine;
-
-CREATE TABLE vendor_machine (
-  id INT AUTO_INCREMENT  PRIMARY KEY,
-  code VARCHAR(250) NOT NULL,
-  name VARCHAR(250) NOT NULL,
-  price DOUBLE(250) NOT NULL,
-  current_amount DOUBLE (250) NOT NULL
-);

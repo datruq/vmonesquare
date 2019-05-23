@@ -1,7 +1,5 @@
 package com.onesquare.vmonesquare.config;
 
-import com.onesquare.vmonesquare.DB.VendorMachineServiceImpl;
-import com.onesquare.vmonesquare.domain.gateway.IVendorMachineService;
 import com.onesquare.vmonesquare.domain.usercase.VmonesquareAppUsercase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,8 +12,4 @@ public class DomainBeans {
         return new VmonesquareAppUsercase();
     }
 
-    @Bean
-    public IVendorMachineService vendorMachineService(){
-        return new VendorMachineServiceImpl();
-    }
 }
