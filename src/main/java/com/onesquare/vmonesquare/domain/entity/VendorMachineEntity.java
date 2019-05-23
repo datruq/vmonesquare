@@ -1,5 +1,6 @@
 package com.onesquare.vmonesquare.domain.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,13 +10,10 @@ import java.util.Map;
 public class VendorMachineEntity {
 
     @Setter
-    public Map<String, Double> money;
+    public int cents;
 
     @Setter
-    public double cents;
-
-    @Setter
-    public double bills;
+    public int bills;
 
     @Setter
     public VMItem vmItem;
@@ -27,7 +25,7 @@ public class VendorMachineEntity {
         @Setter
         public String code;
         @Setter
-        public double cost;
+        public double price;
 
     }
 
