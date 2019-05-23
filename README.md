@@ -60,7 +60,7 @@ With this VendorMachineApp we can get:
 * If the user hasn’t added enough money, the app will provide a message indicating they need to add x more cents.
 * If the user has added exact money, the app will provide a message indicating they can keep buying.
 * If the user has added more than enough money, the app will provide a message indicating they can keep buying, and the extra balance.
-
+* All of a new set of products can be added CSV upload.
 
 **Get postVendorMachine to start or keep buying**
 
