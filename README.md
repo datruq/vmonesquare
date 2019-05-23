@@ -29,7 +29,7 @@ When it finished clonning and have it in your local machine, just open it with I
 4. Change into the target directory: cd build/libs
 5. You should see the file name: vmonesquareapp-1.0.jar.
 6. Execute the JAR: ``` java -jar vmonesquareapp-1.0.jar```.
-7. The application should be available at http://localhost:8080/vm/getItem.
+7. The application should be available at http://localhost:8080/vm/postVendorMachine.
 
 ## Running the tests
 
